@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "569702201652",
+    "firebase_url": "https://sfitgdgmapsfirebasedemo.firebaseio.com",
+    "project_id": "sfitgdgmapsfirebasedemo",
+    "storage_bucket": "sfitgdgmapsfirebasedemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:569702201652:android:5b69b212767b5f6b",
+        "android_client_info": {
+          "package_name": "com.mayurphadte.sfitgdgmapsfirebasedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "569702201652-le4124u0h0gtre78hko8uca8o35jj7bv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mayurphadte.sfitgdgmapsfirebasedemo",
+            "certificate_hash": "5fac107d8e7e77c0db333f60d670ea45e0f5300b"
+          }
+        },
+        {
+          "client_id": "569702201652-jke8430i9fhde46rvhchrdo9q837c281.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQHzHgUksQlzxURl-CHZhbBCENKCxmevE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "569702201652-jke8430i9fhde46rvhchrdo9q837c281.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
