@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mayurphadte.sfitgdgmapsfirebasedemo">
-
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    package="com.sweedalayush.maps">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <!-- MAPS API KEY-->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCKQPCGcgYYbTqiFMA4qLm8sYIYt512Ymc" />
+            android:value="AIzaSyBmFISKSpBA6vyUn_lQ6-A6SivGkNnB7_g" />
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -22,10 +22,29 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BasicMapDemoActivity"></activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_second"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignupActivity"
+            android:label="@string/title_activity_second"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:label="@string/title_activity_second"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoggedInActivity"
+            android:label="@string/title_activity_logged_in"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".BasicMapDemoActivity"
+            android:label="BasicMapDemoActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity
             android:name=".MyLocationDemoActivity"
-            android:label="@string/title_activity_set_location"
+            android:label="MyLocationDemoActivity"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

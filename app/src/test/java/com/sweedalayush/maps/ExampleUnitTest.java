@@ -1,4 +1,4 @@
-package com.mayurphadte.sfitgdgmapsfirebasedemo;
+package com.sweedalayush.maps;
 
 import org.junit.Test;
 

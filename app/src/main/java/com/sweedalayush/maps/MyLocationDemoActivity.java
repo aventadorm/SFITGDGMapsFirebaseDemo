@@ -14,20 +14,14 @@
  * limitations under the License.
  */
 
-package com.mayurphadte.sfitgdgmapsfirebasedemo;
+package com.sweedalayush.maps;
 
-import android.Manifest;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
 
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.GoogleMap.OnMyLocationButtonClickListener;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
@@ -42,6 +36,7 @@ public class MyLocationDemoActivity extends AppCompatActivity
 
     private GoogleMap mMap;
     String name;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +63,9 @@ public class MyLocationDemoActivity extends AppCompatActivity
         final DatabaseReference myRef = database.getReference(name);
         myRef.child("latitude").setValue(latLng.latitude);
         myRef.child("longitude").setValue(latLng.longitude);
+        myRef.child("name").setValue(name);
+
+
         Toast.makeText(MyLocationDemoActivity.this,"Location has been set",Toast.LENGTH_LONG).show();
     }
 }

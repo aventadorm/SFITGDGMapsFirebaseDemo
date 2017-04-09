@@ -1,4 +1,4 @@
-package com.mayurphadte.sfitgdgmapsfirebasedemo;
+package com.sweedalayush.maps;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.mayurphadte.sfitgdgmapsfirebasedemo", appContext.getPackageName());
+        assertEquals("com.sweedalayush.maps", appContext.getPackageName());
     }
 }

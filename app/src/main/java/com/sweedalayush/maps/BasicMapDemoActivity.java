@@ -14,12 +14,11 @@
  * limitations under the License.
  */
 
-package com.mayurphadte.sfitgdgmapsfirebasedemo;
+package com.sweedalayush.maps;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -31,6 +30,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import java.util.HashMap;
 
 
 /**
@@ -56,18 +57,23 @@ public class BasicMapDemoActivity extends AppCompatActivity implements OnMapRead
 
                 mMap.clear();
                 for (DataSnapshot postSnapshot: dataSnapshot.getChildren()) {
-                    //String name = dataSnapshot.getValue(String.class).toString();
-                    //Log.d("Hi",name);
+                    //HashMap name = postSnapshot.getValue(HashMap.class);
+                    //Log.d("Hi",name.values().toArray().toString());
+
                     Double latitude = (Double)postSnapshot.child("latitude").getValue();
                     Double longitude = (Double)postSnapshot.child("longitude").getValue();
+                    String name = (String)postSnapshot.child("name").getValue();
                     //Log.d("Hi",Double.toString(latitude)+" "+Double.toString(longitude));
-                    mMap.addMarker(new MarkerOptions().position(new LatLng(latitude, longitude)).title("Marker"));
+                    if(latitude!=null&&longitude!=null){
+                    mMap.addMarker(new MarkerOptions().position(new LatLng(latitude, longitude)).title(name));
+                    }
                 }
 
             }
 
             @Override
             public void onCancelled(DatabaseError error) {
+
 
             }
         });
