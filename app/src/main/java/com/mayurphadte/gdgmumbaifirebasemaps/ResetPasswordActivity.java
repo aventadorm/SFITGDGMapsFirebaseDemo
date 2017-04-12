@@ -1,4 +1,4 @@
-package com.sweedalayush.maps;
+package com.mayurphadte.gdgmumbaifirebasemaps;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;

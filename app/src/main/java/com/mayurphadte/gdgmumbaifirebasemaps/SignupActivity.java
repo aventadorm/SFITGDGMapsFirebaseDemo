@@ -1,4 +1,4 @@
-package com.sweedalayush.maps;
+package com.mayurphadte.gdgmumbaifirebasemaps;
 
 import android.content.Intent;
 import android.os.Bundle;

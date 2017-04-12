@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.sweedalayush.maps;
+package com.mayurphadte.gdgmumbaifirebasemaps;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

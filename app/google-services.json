@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:997250307089:android:ee78baa8d96af10d",
         "android_client_info": {
-          "package_name": "com.sweedalayush.maps"
+          "package_name": "com.mayurphadte.gdgmumbaifirebasemaps"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "997250307089-b8n0jnno3cvqrj6uhdvj6ecqsifi9clp.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.sweedalayush.maps",
+            "package_name": "com.mayurphadte.gdgmumbaifirebasemaps",
             "certificate_hash": "5fac107d8e7e77c0db333f60d670ea45e0f5300b"
           }
         },
